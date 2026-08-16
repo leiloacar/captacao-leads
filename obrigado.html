@@ -123,5 +123,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </main>
 
+<script>
+  // Dispara o evento de conversão só na primeira visita pós-cadastro real
+  // (via flag setado pelo index.html), nunca em refresh/acesso direto.
+  if (sessionStorage.getItem('leiloacar_lead_submitted') === '1') {
+    sessionStorage.removeItem('leiloacar_lead_submitted');
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'lead_submitted' });
+  }
+</script>
+
 </body>
 </html>
