@@ -10,8 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Leiloacar — Em breve. Anuncie até 25/08 e ganhe +2 anúncios grátis</title>
-<meta name="description" content="A Leiloacar está chegando. Pré-cadastre-se agora, publique seu 1º anúncio até 25/08/2026 e ganhe mais 2 anúncios grátis — vagas limitadas e acesso exclusivo para clientes VIP, vendedores e lojistas.">
+<title>Leiloacar — Em breve. Compradores disputam pelo seu carro, você vende pelo melhor preço</title>
+<meta name="description" content="A Leiloacar está chegando: vários compradores competem pelo seu carro em tempo real. Venda pelo melhor preço ou compre com segurança. Pré-cadastre-se — vagas limitadas.">
 <link rel="icon" type="image/png" href="assets/logo_small.png?v=2">
 <link rel="shortcut icon" type="image/png" href="assets/logo_small.png?v=2">
 
@@ -154,6 +154,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border-radius: 999px;
   }
 
+  .trust-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: 1.75rem;
+    text-align: left;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgb(255 255 255 / .78);
+    font-size: 0.85rem;
+  }
+  .trust-item svg {
+    flex-shrink: 0;
+    color: var(--color-accent-light);
+  }
+
   /* ===== FORM CARD ===== */
   .form-card {
     background: #fff;
@@ -237,24 +256,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="wrap">
     <img class="logo" src="assets/logo_small.png" alt="Leiloacar">
 
-    <div class="badge"><span class="dot"></span> Em breve · Vagas limitadas</div>
+    <div class="badge"><span class="dot"></span> Vagas limitadas · Acesso exclusivo</div>
 
-    <h1>Chega de perder tempo com quem só quer <span class="accent">pechinchar.</span></h1>
-    <p class="subtitle">Seja você lojista ou dono de um único carro, a Leiloacar te conecta só com compradores sérios — gente pronta pra fechar, não curioso testando preço. <strong>Você recebe interesse qualificado e escolhe a melhor oferta.</strong></p>
+    <h1>A Leiloacar está <span class="accent">chegando</span></h1>
+    <p class="subtitle">Vários compradores disputam pelo seu carro e o preço sobe a cada lance — mas quem decide vender é <strong>sempre você</strong>, e nunca abaixo do que ele vale. Compre com a mesma segurança, do início ao fim.</p>
 
     <div class="perk-box">
       <div class="icon">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6M2 7h20M12 22V7M12 7a2.5 2.5 0 1 1 2.5-2.5C14.5 6 12 7 12 7ZM12 7a2.5 2.5 0 1 0-2.5-2.5C9.5 6 12 7 12 7Z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 17 9 11 13 15 21 7"/><path d="M15 7h6v6"/></svg>
       </div>
       <div class="text">
-        <strong>Faça 1 anúncio até 25/08 e ganhe +2 grátis</strong>
-        <span>Pré-cadastre agora, publique seu primeiro anúncio até 25/08/2026 e garanta mais 2 anúncios grátis na Leiloacar. Só pras primeiras vagas.</span>
+        <strong>Seu carro vale mais aqui</strong>
+        <span>Vários compradores competem pelo seu veículo em tempo real — você escolhe a melhor oferta.</span>
+      </div>
+    </div>
+
+    <div class="audience">
+      <span>Quero comprar</span>
+      <span>Quero vender meu carro</span>
+    </div>
+
+    <div class="trust-list">
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Sem pagamento antecipado</span>
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Vendedores e compradores verificados</span>
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Histórico e documentação do veículo conferidos</span>
       </div>
     </div>
 
     <div class="form-card" id="lead-form-hero">
-      <h2>Quero só compradores sérios</h2>
-      <p class="hint">30 segundos. Sem compromisso. Zero spam.</p>
+      <h2>Garanta sua vaga</h2>
+      <p class="hint">Preencha em 20 segundos. Vagas limitadas.</p>
       <form class="lead-form" novalidate>
         <div class="field">
           <label for="nome-hero">Nome completo</label>
@@ -268,13 +307,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <label for="telefone-hero">Telefone / WhatsApp</label>
           <input type="tel" id="telefone-hero" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel" required>
         </div>
-        <button type="submit" class="btn-cta">Tô dentro! →</button>
+        <button type="submit" class="btn-cta">Quero garantir minha vaga</button>
         <p class="form-error"></p>
-        <p class="form-note">Seus dados ficam seguros com a gente.</p>
+        <p class="form-note">Seus dados estão seguros e não serão compartilhados.</p>
       </form>
     </div>
 
-    <p class="footer-note">Compradores qualificados. Zero enrolação. — © 2026 Leiloacar</p>
+    <p class="footer-note">© 2026 Leiloacar. Todos os direitos reservados.</p>
   </div>
 </div>
 
@@ -342,6 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         .from('.subtitle', { y: 20, opacity: 0, duration: 0.5 }, '-=0.35')
         .from('.perk-box', { y: 20, opacity: 0, duration: 0.5 }, '-=0.3')
         .from('.audience span', { y: 15, opacity: 0, duration: 0.4, stagger: 0.06 }, '-=0.3')
+        .from('.trust-item', { x: -10, opacity: 0, duration: 0.4, stagger: 0.08 }, '-=0.2')
         .from('.form-card', { y: 30, opacity: 0, duration: 0.6 }, '-=0.3');
     }
   }
